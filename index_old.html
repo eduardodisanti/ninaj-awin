@@ -9,57 +9,6 @@
   <meta property="og:image" content="assets/images/DSCN1646.JPG" />
   <title>Ninaj Awin — The Eye of Fire</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-
-<style>
-  .flame-lab-block{
-    margin-top:3rem;
-    padding-top:2.5rem;
-    border-top:1px solid rgba(0,0,0,.14);
-  }
-  .flame-lab-block h3{
-    font-family:Georgia,"Times New Roman",serif;
-    font-size:clamp(2rem,4vw,3.4rem);
-    line-height:1.08;
-    margin:.25rem 0 1.4rem;
-    max-width:900px;
-  }
-  .flame-lab-grid{
-    display:grid;
-    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-    gap:1.5rem;
-    align-items:start;
-  }
-  .flame-lab-card{
-    margin:0;
-    background:#ebe5d9;
-    padding:12px;
-  }
-  .flame-lab-card img,
-  .flame-lab-card video{
-    display:block;
-    width:100%;
-    aspect-ratio:16/9;
-    object-fit:cover;
-    background:#000;
-  }
-  .flame-lab-card figcaption{
-    font-size:.84rem;
-    line-height:1.5;
-    color:#6e695f;
-    margin-top:10px;
-  }
-  .flame-lab-copy{
-    max-width:960px;
-    margin:1.5rem auto 0;
-    font-size:1.05rem;
-    line-height:1.7;
-  }
-  .flame-lab-copy p{margin:0 0 1rem}
-  @media(max-width:800px){
-    .flame-lab-grid{grid-template-columns:1fr}
-  }
-</style>
-
 </head>
 <body>
 <nav class="nav">
@@ -132,35 +81,21 @@
     <p class="intro">The clean architecture diagram came later. The actual project looked like this.</p>
     <div class="masonry">
       <figure><img src="assets/images/DSCN1591.JPG" alt="Students assembling and testing drone hardware in a UMSS laboratory" /><figcaption>Hardware, laptops, instruments and a drone frame on a classroom table. Integration was physical, not abstract.</figcaption></figure>
-      
+      <figure><img src="assets/images/20151210_151113.jpg" alt="Student programming beside a candle used during detector experiments" /><figcaption>Computer-vision experiments were sometimes wonderfully direct. A laptop, a camera, code — and a candle as a test target.</figcaption></figure>
       <figure><img src="assets/images/DSC_0978.JPG" alt="Students during a long work session" /><figcaption>Late sessions and exhaustion were part of the record too. This was built around classes, deadlines and whatever time people could find.</figcaption></figure>
       <figure><img src="assets/images/DSC_1048.JPG" alt="Students working together during Ninaj Awin" /><figcaption>Learning, implementation and troubleshooting happened side by side.</figcaption></figure>
     </div>
 
-    <div class="flame-lab-block">
-      <div class="kicker">From controlled tests to live detection</div>
-      <h3>Testing the perception pipeline live.</h3>
-
-      <div class="flame-lab-grid">
-        <figure class="flame-lab-card">
-          <img src="assets/images/20151210_151113.jpg"
-               alt="Students testing the Ninaj Awin fire detector with a controlled flame target" />
-          <figcaption><strong>Controlled laboratory test.</strong> A simple flame target made it possible to test the complete live vision pipeline repeatedly and under controlled conditions.</figcaption>
-        </figure>
-
-        <figure class="flame-lab-card">
-          <video controls preload="metadata" playsinline>
-            <source src="assets/videos/svmR.mp4" type="video/mp4" />
-          </video>
-          <figcaption><strong>Live multi-flame detection.</strong> The computer-vision pipeline identifies two separate flame regions at the same time while the scene changes in front of the camera.</figcaption>
-        </figure>
-      </div>
-
-      <div class="flame-lab-copy">
-        <p>The detector was <strong>not trained on candles</strong>. The perception work used fire imagery in multiple forms, scales and conditions. Candles were useful later as simple, controllable flame sources for live testing: they let the team move targets independently, repeat experiments quickly and see whether the whole perception pipeline behaved as expected.</p>
-        <p>This particular test became memorable because the system recognized <strong>two independent flames simultaneously</strong>. It was a modest laboratory setup, but an important engineering step between offline model development and the later aerial fire-detection experiments.</p>
-      </div>
-    </div>
+    <div class="breakthrough">
+      <div class="kicker">The first moment we knew</div>
+      <h3>The detector saw two flames at once.</h3>
+      <p>One of the most memorable perception tests was also one of the simplest. Two candles were moved independently in front of the camera while the vision pipeline ran live. The system identified both flames simultaneously. It was a small experiment, but for the team it was a breakthrough: the detector was no longer just code and training data — it was seeing fire.</p>
+      <figure class="breakthrough-video">
+        <video controls preload="metadata" playsinline>
+          <source src="assets/videos/svmR.mp4" type="video/mp4" />
+        </video>
+        <figcaption><strong>Two-candle detection test.</strong> The live computer-vision pipeline recognizes two separate flame targets at the same time. A simple laboratory scene, but an important milestone on the path toward aerial wildfire detection.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -184,8 +119,8 @@
     </div>
 
     <div class="evidence-bridge">
-      <p class="quote">The aerial detections did not appear fully formed. They were built through iteration.</p>
-      <p>Controlled tests, classifier experiments, debugging and repeated visual checks came before the system was trusted in moving aerial imagery.</p>
+      <p class="quote">Before asking a flying machine to recognize a wildfire, sometimes you start with two candles on a table.</p>
+      <p>Other surviving clips document the less glamorous steps: simple laboratory targets, classifier experiments, training, debugging and repeated visual tests. The aerial detections did not appear fully formed. They were built through iteration.</p>
     </div>
 
     <div class="night-test">
