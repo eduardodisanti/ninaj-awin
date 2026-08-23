@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you cite this historical archive, please preserve the institutional attribution to UMSS."
+title: "Ninaj Awin — The Eye of Fire"
+type: dataset
+authors:
+  - name: "Universidad Mayor de San Simón (UMSS)"
+    affiliation: "Universidad Mayor de San Simón"
+year: 2015
+version: "Historical archive reconstruction, 2026"
+repository-code: "https://github.com/eduardodisanti/ninaj-awin"
+url: "https://eduardodisanti.github.io/ninaj-awin/"
+abstract: >-
+  Historical archive of Ninaj Awin, a multidisciplinary research and educational
+  project developed at the Universidad Mayor de San Simón (UMSS), Cochabamba,
+  Bolivia, in 2015. The project explored drones, autonomous agents, computer
+  vision, fire and smoke detection, flight control, communications and
+  firefighter-oriented support for early wildfire detection. The archive is
+  maintained by Eduardo Di Santi.
+keywords:
+  - wildfire detection
+  - autonomous drones
+  - computer vision
+  - UMSS
+  - Bolivia
+  - Parque Tunari
+  - autonomous agents
+  - historical archive
