@@ -1,339 +1,332 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Ninaj Awin: a 2015 UMSS multidisciplinary research and education project using drones, computer vision and autonomous agents for early wildfire detection." />
-  <meta property="og:title" content="Ninaj Awin — The Eye of Fire" />
-  <meta property="og:description" content="Almost 100 students and faculty. Less than US$4,000. Drones, computer vision, autonomous agents and a real wildfire problem in Bolivia, 2015." />
-  <meta property="og:image" content="assets/images/DSCN1646.JPG" />
-  <title>Ninaj Awin — The Eye of Fire</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-<style>
-  .flame-lab-block{
-    margin-top:3rem;
-    padding-top:2.5rem;
-    border-top:1px solid rgba(0,0,0,.14);
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ninaj Awin — The Eye of Fire: Autonomous Drones for Wildfire Detection</title>
+<meta content="Ninaj Awin was a 2015 multidisciplinary research project at Universidad Mayor de San Simón in Bolivia exploring autonomous drones, computer vision and artificial intelligence for early wildfire detection and emergency response." name="description"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="Eduardo Di Santi" name="author"/>
+<!-- Replace with the real public URL of the archive -->
+<!-- Replace YOUR-DOMAIN with the real public archive URL before publishing. -->
+<link href="https://YOUR-DOMAIN.example/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="Ninaj Awin — The Eye of Fire: Autonomous Drones for Wildfire Detection" property="og:title"/>
+<meta content="A 2015 Bolivian research project exploring autonomous drones, computer vision and artificial intelligence for early wildfire detection and emergency response." property="og:description"/>
+<meta content="https://YOUR-DOMAIN.example/" property="og:url"/>
+<meta content="https://YOUR-DOMAIN.example/assets/images/DSCN1646.JPG" property="og:image"/>
+<meta content="Ninaj Awin students, firefighters and autonomous drone system during a 2015 wildfire research project in Bolivia" property="og:image:alt"/>
+<meta content="Ninaj Awin — The Eye of Fire" property="og:site_name"/>
+<!-- Twitter / X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Ninaj Awin — Autonomous Drones for Wildfire Detection" name="twitter:title"/>
+<meta content="Historical archive of the 2015 UMSS research project combining autonomous drones, computer vision and AI for wildfire detection in Bolivia." name="twitter:description"/>
+<meta content="https://YOUR-DOMAIN.example/assets/images/DSCN1646.JPG" name="twitter:image"/>
+<!-- Structured data -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchProject",
+    "name": "Ninaj Awin",
+    "alternateName": "The Eye of Fire",
+    "description": "A multidisciplinary research and education project exploring autonomous drones, computer vision and artificial intelligence for early wildfire detection and emergency response.",
+    "startDate": "2015",
+    "location": {
+      "@type": "Place",
+      "name": "Universidad Mayor de San Simón",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cochabamba",
+        "addressCountry": "BO"
+      }
+    },
+    "funder": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad Mayor de San Simón"
+    },
+    "keywords": [
+      "autonomous drones",
+      "autonomous drone systems",
+      "wildfire detection",
+      "forest fire detection",
+      "wildfire monitoring",
+      "AI for wildfire detection",
+      "computer vision",
+      "autonomous aerial systems",
+      "UAV",
+      "drone technology",
+      "Bolivia"
+    ]
   }
-  .flame-lab-block h3{
-    font-family:Georgia,"Times New Roman",serif;
-    font-size:clamp(2rem,4vw,3.4rem);
-    line-height:1.08;
-    margin:.25rem 0 1.4rem;
-    max-width:900px;
-  }
-  .flame-lab-grid{
-    display:grid;
-    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-    gap:1.5rem;
-    align-items:start;
-  }
-  .flame-lab-card{
-    margin:0;
-    background:#ebe5d9;
-    padding:12px;
-  }
-  .flame-lab-card img,
-  .flame-lab-card video{
-    display:block;
-    width:100%;
-    aspect-ratio:16/9;
-    object-fit:cover;
-    background:#000;
-  }
-  .flame-lab-card figcaption{
-    font-size:.84rem;
-    line-height:1.5;
-    color:#6e695f;
-    margin-top:10px;
-  }
-  .flame-lab-copy{
-    max-width:960px;
-    margin:1.5rem auto 0;
-    font-size:1.05rem;
-    line-height:1.7;
-  }
-  .flame-lab-copy p{margin:0 0 1rem}
-  @media(max-width:800px){
-    .flame-lab-grid{grid-template-columns:1fr}
-  }
-</style>
-
+  </script>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<!-- your existing style block -->
 </head>
 <body>
 <nav class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="#top">NINAJ AWIN · 2015</a>
-    <div class="navlinks">
-      <a href="#story">Story</a><a href="#people">People</a><a href="#work">Work</a><a href="#impact">Impact</a><a href="#system">System</a><a href="#archive">Archive</a>
-    </div>
-  </div>
+<div class="wrap nav-inner">
+<a class="brand" href="#top">NINAJ AWIN · 2015</a>
+<div class="navlinks">
+<a href="#story">Story</a><a href="#people">People</a><a href="#work">Work</a><a href="#evidence">Evidence</a><a href="#field">Field Tests</a><a href="#impact">Impact</a><a href="#system">System</a><a href="#archive">Archive</a>
+</div>
+</div>
 </nav>
-
-<header id="top" class="hero">
-  <img class="hero-image" src="assets/images/DSCN1646.JPG" alt="Students, firefighters and a drone demonstration during Ninaj Awin, 2015" />
-  <div class="hero-shade"></div>
-  <div class="wrap hero-content">
-    <div class="eyebrow">Universidad Mayor de San Simón · Cochabamba, Bolivia · 2015</div>
-    <h1>Ninaj Awin</h1>
-    <p class="subtitle">The Eye of Fire</p>
-    <p class="lede">A multidisciplinary research and educational project of the Universidad Mayor de San Simón (UMSS) exploring autonomous aerial intelligence for early wildfire detection — built when civilian drones were still a novelty, with almost no money and an extraordinary amount of human commitment.</p>
-  </div>
+<header class="hero" id="top">
+<img alt="Ninaj Awin autonomous drone demonstration with students and firefighters in Bolivia, 2015" class="hero-image" src="assets/images/DSCN1646.JPG"/>
+<div class="hero-shade"></div>
+<div class="wrap hero-content">
+<div class="eyebrow">Universidad Mayor de San Simón · Cochabamba, Bolivia · 2015</div>
+<h1>Ninaj Awin</h1>
+<h2>Autonomous Drones for Wildfire Detection and Emergency Response</h2>
+<p class="subtitle">The Eye of Fire</p>
+<p class="lede">
+      Ninaj Awin was a multidisciplinary research and educational project at the
+      Universidad Mayor de San Simón (UMSS) in Bolivia exploring autonomous drone
+      systems, artificial intelligence and computer vision for early wildfire
+      detection, aerial fire monitoring and emergency response.
+    </p>
+</div>
 </header>
-
-<section class="facts-band" aria-label="Project facts">
-  <div class="wrap facts">
-    <div class="fact"><strong>&lt; US$4,000</strong><span>Total resources available</span></div>
-    <div class="fact"><strong>~100</strong><span>Students and faculty involved</span></div>
-    <div class="fact"><strong>2015</strong><span>When civilian drones were still new</span></div>
-    <div class="fact"><strong>Parque Tunari</strong><span>Real wildfire context and field testing</span></div>
-  </div>
+<section aria-label="Project facts" class="facts-band">
+<div class="wrap facts">
+<div class="fact"><strong>&lt; US$4,000</strong><span>Total resources available</span></div>
+<div class="fact"><strong>~100</strong><span>Students and faculty involved</span></div>
+<div class="fact"><strong>2015</strong><span>When civilian drones were still new</span></div>
+<div class="fact"><strong>Parque Tunari</strong><span>Real wildfire context and field testing</span></div>
+</div>
 </section>
-
 <main>
-<section id="story" class="section">
-  <div class="wrap split">
-    <div>
-      <div class="kicker">The reason</div>
-      <h2>This did not start with a technology. It started with a fire problem.</h2>
-    </div>
-    <div class="copy">
-      <p>Every dry season, wildfires threaten Parque Tunari, the ecosystem above Cochabamba and the city below it. Ninaj Awin began with a simple but difficult question: <strong>could autonomous aerial agents detect smoke or fire early enough to help people react sooner?</strong></p>
-      <p>At the Universidad Mayor de San Simón (UMSS), that question became a real multidisciplinary university project. Artificial intelligence, computer vision, automatic control, software engineering, electronics, mathematics, physics and field operations had to meet in the same room — and later outside that room.</p>
-      <p>We had less than US$4,000. Equipment was shared, repaired, adapted and improvised. We looked for local sponsors and support. We dealt with administrative friction, departmental boundaries, scarce infrastructure and the politics that accompany ambitious work in a resource-constrained public university.</p>
-      <blockquote>What kept the project moving was not institutional abundance. It was the willingness of students and teachers to make it work anyway.</blockquote>
-    </div>
-  </div>
+<section class="section" id="story">
+<div class="wrap split">
+<div>
+<div class="kicker">The reason</div>
+<h2>This did not start with a technology. It started with a fire problem.</h2>
+</div>
+<div class="copy">
+<p>Every dry season, wildfires threaten Parque Tunari, the ecosystem above Cochabamba and the city below it. Ninaj Awin began with a simple but difficult question: <strong>could autonomous aerial agents detect smoke or fire early enough to help people react sooner?</strong></p>
+<p>At the Universidad Mayor de San Simón (UMSS), that question became a real multidisciplinary university project. Artificial intelligence, computer vision, automatic control, software engineering, electronics, mathematics, physics and field operations had to meet in the same room — and later outside that room.</p>
+<p>We had less than US$4,000. Equipment was shared, repaired, adapted and improvised. We looked for local sponsors and support. We dealt with administrative friction, departmental boundaries, scarce infrastructure and the politics that accompany ambitious work in a resource-constrained public university.</p>
+<blockquote>What kept the project moving was not institutional abundance. It was the willingness of students and teachers to make it work anyway.</blockquote>
+</div>
+</div>
 </section>
-
-<section id="people" class="section dark">
-  <div class="wrap">
-    <div class="kicker">Before the drones could fly</div>
-    <h2>We had to teach.</h2>
-    <div class="story-grid">
-      <figure class="story-photo large">
-        <img src="assets/images/DSCN1292.JPG" alt="A classroom session at UMSS during the Ninaj Awin project" />
-        <figcaption>One of the project teaching sessions at UMSS. The work required building knowledge before building systems.</figcaption>
-      </figure>
-      <div class="copy light-copy">
-        <p>Ninaj Awin was not a small research group with a finished skill set. It became a learning environment involving nearly one hundred students and faculty across different activities and departments.</p>
-        <p>People had to learn computer vision, machine learning, control, electronics, software integration and research practice while the project itself was advancing. Lectures, debugging sessions, hardware work and project meetings often happened in the same spaces.</p>
-        <p>The educational model was deliberately practical: <strong>teach enough theory to build something, then make reality expose what the theory forgot.</strong></p>
-      </div>
-    </div>
-  </div>
+<section class="section dark" id="people">
+<div class="wrap">
+<div class="kicker">Before the drones could fly</div>
+<h2>We had to teach.</h2>
+<div class="story-grid">
+<figure class="story-photo large">
+<img alt="A classroom session at UMSS during the Ninaj Awin project" src="assets/images/DSCN1292.JPG"/>
+<figcaption>One of the project teaching sessions at UMSS. The work required building knowledge before building systems.</figcaption>
+</figure>
+<div class="copy light-copy">
+<p>Ninaj Awin was not a small research group with a finished skill set. It became a learning environment involving nearly one hundred students and faculty across different activities and departments.</p>
+<p>People had to learn computer vision, machine learning, control, electronics, software integration and research practice while the project itself was advancing. Lectures, debugging sessions, hardware work and project meetings often happened in the same spaces.</p>
+<p>The educational model was deliberately practical: <strong>teach enough theory to build something, then make reality expose what the theory forgot.</strong></p>
+</div>
+</div>
+</div>
 </section>
-
-<section id="work" class="section">
-  <div class="wrap">
-    <div class="kicker">The work behind the demonstration</div>
-    <h2>Build. Test. Break. Fix. Repeat.</h2>
-    <p class="intro">The clean architecture diagram came later. The actual project looked like this.</p>
-    <div class="masonry">
-      <figure><img src="assets/images/DSCN1591.JPG" alt="Students assembling and testing drone hardware in a UMSS laboratory" /><figcaption>Hardware, laptops, instruments and a drone frame on a classroom table. Integration was physical, not abstract.</figcaption></figure>
-      
-      <figure><img src="assets/images/DSC_0978.JPG" alt="Students during a long work session" /><figcaption>Late sessions and exhaustion were part of the record too. This was built around classes, deadlines and whatever time people could find.</figcaption></figure>
-      <figure><img src="assets/images/DSC_1048.JPG" alt="Students working together during Ninaj Awin" /><figcaption>Learning, implementation and troubleshooting happened side by side.</figcaption></figure>
-    </div>
-
-    <div class="flame-lab-block">
-      <div class="kicker">From controlled tests to live detection</div>
-      <h3>Testing the perception pipeline live.</h3>
-
-      <div class="flame-lab-grid">
-        <figure class="flame-lab-card">
-          <img src="assets/images/20151210_151113.jpg"
-               alt="Students testing the Ninaj Awin fire detector with a controlled flame target" />
-          <figcaption><strong>Controlled laboratory test.</strong> A simple flame target made it possible to test the complete live vision pipeline repeatedly and under controlled conditions.</figcaption>
-        </figure>
-
-        <figure class="flame-lab-card">
-          <video controls preload="metadata" playsinline>
-            <source src="assets/videos/svmR.mp4" type="video/mp4" />
-          </video>
-          <figcaption><strong>Live multi-flame detection.</strong> The computer-vision pipeline identifies two separate flame regions at the same time while the scene changes in front of the camera.</figcaption>
-        </figure>
-      </div>
-
-      <div class="flame-lab-copy">
-        <p>The detector was <strong>not trained on candles</strong>. The perception work used fire imagery in multiple forms, scales and conditions. Candles were useful later as simple, controllable flame sources for live testing: they let the team move targets independently, repeat experiments quickly and see whether the whole perception pipeline behaved as expected.</p>
-        <p>This particular test became memorable because the system recognized <strong>two independent flames simultaneously</strong>. It was a modest laboratory setup, but an important engineering step between offline model development and the later aerial fire-detection experiments.</p>
-      </div>
-    </div>
-    </div>
-  </div>
+<section class="section" id="work">
+<div class="wrap">
+<div class="kicker">The work behind the demonstration</div>
+<h2>Build. Test. Break. Fix. Repeat.</h2>
+<p class="intro">The clean architecture diagram came later. The actual project looked like this.</p>
+<div class="masonry">
+<figure><img alt="Students assembling and testing drone hardware in a UMSS laboratory" src="assets/images/DSCN1591.JPG"/><figcaption>Hardware, laptops, instruments and a drone frame on a classroom table. Integration was physical, not abstract.</figcaption></figure>
+<figure><img alt="Students during a long work session" src="assets/images/DSC_0978.JPG"/><figcaption>Late sessions and exhaustion were part of the record too. This was built around classes, deadlines and whatever time people could find.</figcaption></figure>
+<figure><img alt="Students working together during Ninaj Awin" src="assets/images/DSC_1048.JPG"/><figcaption>Learning, implementation and troubleshooting happened side by side.</figcaption></figure>
+</div>
+<div class="flame-lab-block">
+<div class="kicker">From controlled tests to live detection</div>
+<h3>Testing the perception pipeline live.</h3>
+<div class="flame-lab-grid">
+<figure class="flame-lab-card">
+<img alt="Students testing the Ninaj Awin fire detector with a controlled flame target" src="assets/images/20151210_151113.jpg"/>
+<figcaption><strong>Controlled laboratory test.</strong> A simple flame target made it possible to test the complete live vision pipeline repeatedly and under controlled conditions.</figcaption>
+</figure>
+<figure class="flame-lab-card">
+<video controls="" playsinline="" preload="metadata">
+<source src="assets/videos/svmR.mp4" type="video/mp4"/>
+</video>
+<figcaption><strong>Live multi-flame detection.</strong> The computer-vision pipeline identifies two separate flame regions at the same time while the scene changes in front of the camera.</figcaption>
+</figure>
+</div>
+<div class="flame-lab-copy">
+<p>The detector was <strong>not trained on candles</strong>. The perception work used fire imagery in multiple forms, scales and conditions. Candles were useful later as simple, controllable flame sources for live testing: they let the team move targets independently, repeat experiments quickly and see whether the whole perception pipeline behaved as expected.</p>
+<p>This particular test became memorable because the system recognized <strong>two independent flames simultaneously</strong>. It was a modest laboratory setup, but an important engineering step between offline model development and the later aerial fire-detection experiments.</p>
+</div>
+</div>
+</div>
 </section>
-
 <section class="section media-section" id="evidence">
-  <div class="wrap">
-    <div class="kicker">It actually ran</div>
-    <h2>Not slides. Not a simulation. Evidence.</h2>
-    <p class="section-intro">The surviving footage is imperfect, low-resolution and unmistakably from 2015. That is precisely why it belongs here. It documents the progression from small perception experiments to aerial observation of real fire, while other teams were simultaneously making the aircraft stable, controllable and useful.</p>
-
-    <div class="evidence-lead">
-      <h3>It actually saw fire.</h3>
-      <p>The perception work was not limited to training curves or screenshots. The detector ran on moving imagery and marked candidate fire regions directly in the video stream.</p>
-    </div>
-
-    <div class="video-grid">
-      <figure class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/deteccion-fuego-1.mp4" type="video/mp4"></video><figcaption><strong>Fire detection in moving aerial imagery.</strong> A compact surviving test of the vision pipeline marking fire regions in the scene.</figcaption></figure>
-      <figure class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/fire-front-01.mp4" type="video/mp4"></video><figcaption><strong>Following a real fire front from the air.</strong> Camera position, scale, vegetation and background change continuously while detections are produced over the burning area.</figcaption></figure>
-      <figure class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/fire-front-02.mp4" type="video/mp4"></video><figcaption><strong>Fire, smoke and changing geometry.</strong> The aircraft moves close to active fire. Smoke obscures parts of the scene and apparent geometry changes rapidly.</figcaption></figure>
-      <figure class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/fire-front-03.mp4" type="video/mp4"></video><figcaption><strong>An extended fire line.</strong> A long front crosses dry vegetation while the detector responds to different visible segments as the viewpoint changes.</figcaption></figure>
-    </div>
-
-    <div class="evidence-bridge">
-      <p class="quote">The aerial detections did not appear fully formed. They were built through iteration.</p>
-      <p>Controlled tests, classifier experiments, debugging and repeated visual checks came before the system was trusted in moving aerial imagery.</p>
-    </div>
-
-    <div class="night-test">
-      <div>
-        <div class="kicker">And we had to make the aircraft fly</div>
-        <h3>Night stabilization tests</h3>
-        <p>Some engineering nights ended with only a small group still there. The stability and control team kept tuning and testing the aircraft while, in the background, part of the perception team continued working. Test, adjust, fly, fail, repeat. This surviving original recording preserves one of those nights.</p>
-      </div>
-      <figure class="video-card">
-        <video controls preload="metadata" playsinline>
-          <source src="assets/videos/drone_stabilization_test.m4v" type="video/mp4" />
-        </video>
-        <figcaption><strong>Stabilization test, at night.</strong> A reduced control team continued working on aircraft stability while part of the perception team was still active in the background.</figcaption>
-      </figure>
-    </div>
-
-    <div class="night-test autonomous-flight">
-      <div>
-        <div class="kicker">From stabilization to autonomy</div>
-        <h3>The first autonomous flight — with a human guard.</h3>
-        <p>Autonomy was introduced cautiously. The aircraft was allowed to execute the control logic while a human remained ready to intervene. The surviving filename itself records the engineering reality: <em>first autonomous flight with human guard</em>.</p>
-      </div>
-      <figure class="video-card">
-        <video controls preload="metadata" playsinline>
-          <source src="assets/videos/20151210_162033_first_autonomous_flight_with_human_guard.m4v" type="video/mp4" />
-        </video>
-        <figcaption><strong>First autonomous flight with human guard, 10 December 2015.</strong> A step between laboratory control work and the autonomous aerial system the project was trying to build.</figcaption>
-      </figure>
-    </div>
-
-    <p class="small-note">Additional project-era public footage survives on the original YouTube channel. The archive will continue to identify and contextualize the strongest examples rather than simply dump every surviving file.</p>
-  </div>
+<div class="wrap">
+<div class="kicker">It actually ran</div>
+<h2>Not slides. Not a simulation. Evidence.</h2>
+<p class="section-intro">
+      The surviving footage documents an early autonomous drone and computer-vision
+      experiment for wildfire detection. The system processed moving aerial imagery
+      and identified candidate fire regions while the aircraft was observing real
+      fire conditions.
+    </p>
+<div class="evidence-lead">
+<h3>It actually saw fire.</h3>
+<p>The perception work was not limited to training curves or screenshots. The detector ran on moving imagery and marked candidate fire regions directly in the video stream.</p>
+</div>
+<div class="video-grid">
+<figure class="video-card"><video controls="" playsinline="" preload="metadata"><source src="assets/videos/deteccion-fuego-1.mp4" type="video/mp4"/></video><figcaption><strong>Fire detection in moving aerial imagery.</strong> A compact surviving test of the vision pipeline marking fire regions in the scene.</figcaption></figure>
+<figure class="video-card"><video controls="" playsinline="" preload="metadata"><source src="assets/videos/fire-front-01.mp4" type="video/mp4"/></video><figcaption><strong>Following a real fire front from the air.</strong> Camera position, scale, vegetation and background change continuously while detections are produced over the burning area.</figcaption></figure>
+<figure class="video-card"><video controls="" playsinline="" preload="metadata"><source src="assets/videos/fire-front-02.mp4" type="video/mp4"/></video><figcaption><strong>Fire, smoke and changing geometry.</strong> The aircraft moves close to active fire. Smoke obscures parts of the scene and apparent geometry changes rapidly.</figcaption></figure>
+<figure class="video-card"><video controls="" playsinline="" preload="metadata"><source src="assets/videos/fire-front-03.mp4" type="video/mp4"/></video><figcaption><strong>An extended fire line.</strong> A long front crosses dry vegetation while the detector responds to different visible segments as the viewpoint changes.</figcaption></figure>
+</div>
+<div class="evidence-bridge">
+<p class="quote">The aerial detections did not appear fully formed. They were built through iteration.</p>
+<p>Controlled tests, classifier experiments, debugging and repeated visual checks came before the system was trusted in moving aerial imagery.</p>
+</div>
+<div class="night-test">
+<div>
+<div class="kicker">And we had to make the aircraft fly</div>
+<h3>Night stabilization tests</h3>
+<p>Some engineering nights ended with only a small group still there. The stability and control team kept tuning and testing the aircraft while, in the background, part of the perception team continued working. Test, adjust, fly, fail, repeat. This surviving original recording preserves one of those nights.</p>
+</div>
+<figure class="video-card">
+<video controls="" playsinline="" preload="metadata">
+<source src="assets/videos/drone_stabilization_test.m4v" type="video/mp4">
+</source></video>
+<figcaption><strong>Stabilization test, at night.</strong> A reduced control team continued working on aircraft stability while part of the perception team was still active in the background.</figcaption>
+</figure>
+</div>
+<div class="night-test autonomous-flight">
+<div>
+<div class="kicker">From stabilization to autonomy</div>
+<h3>The first autonomous flight — with a human guard.</h3>
+<p>Autonomy was introduced cautiously. The aircraft was allowed to execute the control logic while a human remained ready to intervene. The surviving filename itself records the engineering reality: <em>first autonomous flight with human guard</em>.</p>
+</div>
+<figure class="video-card">
+<video controls="" playsinline="" preload="metadata">
+<source src="assets/videos/20151210_162033_first_autonomous_flight_with_human_guard.m4v" type="video/mp4">
+</source></video>
+<figcaption><strong>First autonomous flight with human guard, 10 December 2015.</strong> A step between laboratory control work and the autonomous aerial system the project was trying to build.</figcaption>
+</figure>
+</div>
+<p class="small-note">Additional project-era public footage survives on the original YouTube channel. The archive will continue to identify and contextualize the strongest examples rather than simply dump every surviving file.</p>
+</div>
 </section>
-
-<section id="impact" class="section dark">
-  <div class="wrap">
-    <div class="kicker">From university to real users</div>
-    <h2>The project left the laboratory.</h2>
-    <div class="impact-stack">
-      <figure class="hero-figure"><img src="assets/images/DSCN1634.JPG" alt="Students demonstrating the drone system to firefighters" /><figcaption>Students presenting and demonstrating the system to members of the fire service.</figcaption></figure>
-      <div class="impact-text copy light-copy">
-        <p>The fire department was not an imaginary stakeholder. Firefighters saw the work, discussed it with the students and watched the system being demonstrated. That interaction changed the project: it forced technical ideas to meet operational reality.</p>
-        <p>The team also tested drones in the context for which the system was intended and communicated the work beyond the university. The project attracted public attention because students were doing something unusual for the time: combining drones, autonomy and visual intelligence around a concrete environmental problem.</p>
-      </div>
-      <figure class="wide-impact"><img src="assets/images/DSCN1643.JPG" alt="Drone in flight during a public demonstration with firefighters and media present" /><figcaption>A live flight demonstration. Firefighters, students, observers and media were present while the aircraft flew.</figcaption></figure>
-      <figure class="wide-impact"><img src="assets/images/DSCN1651.JPG" alt="Students, faculty and firefighters together after a project session" /><figcaption>One of the group photographs at the fire department. The project was larger than the code repositories that survived it.</figcaption></figure>
-    </div>
-  </div>
+<section class="section dark" id="impact">
+<div class="wrap">
+<div class="kicker">From university to real users</div>
+<h2>The project left the laboratory.</h2>
+<div class="impact-stack">
+<figure class="hero-figure"><img alt="Students demonstrating the drone system to firefighters" src="assets/images/DSCN1634.JPG"/><figcaption>Students presenting and demonstrating the system to members of the fire service.</figcaption></figure>
+<div class="impact-text copy light-copy">
+<p>The fire department was not an imaginary stakeholder. Firefighters saw the work, discussed it with the students and watched the system being demonstrated. That interaction changed the project: it forced technical ideas to meet operational reality.</p>
+<p>The team also tested drones in the context for which the system was intended and communicated the work beyond the university. The project attracted public attention because students were doing something unusual for the time: combining drones, autonomy and visual intelligence around a concrete environmental problem.</p>
+</div>
+<figure class="wide-impact"><img alt="Drone in flight during a public demonstration with firefighters and media present" src="assets/images/DSCN1643.JPG"/><figcaption>A live flight demonstration. Firefighters, students, observers and media were present while the aircraft flew.</figcaption></figure>
+<figure class="wide-impact"><img alt="Students, faculty and firefighters together after a project session" src="assets/images/DSCN1651.JPG"/><figcaption>One of the group photographs at the fire department. The project was larger than the code repositories that survived it.</figcaption></figure>
+</div>
+</div>
 </section>
-
 <section class="section television">
-  <div class="wrap">
-    <div class="kicker">When the work became visible</div>
-    <h2>People came to see what the students were building.</h2>
-    <p class="intro">Ninaj Awin began in classrooms, improvised workspaces and field tests. As the prototypes became tangible, attention arrived from outside the immediate project team: local television documented the work, university leadership visited, public-sector representatives came to see it, and firefighters engaged directly with the students.</p>
-    <div class="visibility-grid">
-      <figure class="visibility-card visibility-wide"><img src="assets/images/TV_1.JPG" alt="Bolivian television crew filming students working on Ninaj Awin at UMSS" /><figcaption><strong>Media attention.</strong> A Bolivian television crew filming the students at work. The important image is not the camera itself, but what it is pointed at: students building and explaining their own engineering work.</figcaption></figure>
-      <figure class="visibility-card"><img src="assets/images/autoridades/rector.JPG" alt="UMSS rector visiting the Ninaj Awin project in 2015" /><figcaption><strong>University leadership.</strong> A visit from the Rector of UMSS during the project. By this point the work had become visible well beyond the teams developing it.</figcaption></figure>
-      <figure class="visibility-card"><img src="assets/images/autoridades/gobernador_o_algo_asi.JPG" alt="Public-sector representative visiting the Ninaj Awin project in 2015" /><figcaption><strong>Institutional attention.</strong> A public-sector representative visiting the project. The exact historical title is still being verified; the photograph is preserved here without overstating what the archive has not yet confirmed.</figcaption></figure>
-      <figure class="visibility-card visibility-wide"><img src="assets/images/TV_2.JPG" alt="Television crew documenting a Ninaj Awin drone demonstration with students and firefighters" /><figcaption><strong>From laboratory work to public demonstration.</strong> Television documenting the aircraft and the people around it during a demonstration involving students and the fire service.</figcaption></figure>
-    </div>
-    <div class="visibility-copy"><p>For a project operating with less than US$4,000, this visibility mattered. It gave the students an audience beyond their classrooms and showed that ambitious applied research could emerge from a resource-constrained public university.</p><p>But the attention was a consequence, not the objective. The difficult part had already happened before the cameras arrived: teaching, finding components, asking for support, integrating incompatible pieces, repairing what broke, working late and convincing different disciplines to solve one problem together.</p></div>
-  </div>
+<div class="wrap">
+<div class="kicker">When the work became visible</div>
+<h2>People came to see what the students were building.</h2>
+<p class="intro">Ninaj Awin began in classrooms, improvised workspaces and field tests. As the prototypes became tangible, attention arrived from outside the immediate project team: local television documented the work, university leadership visited, public-sector representatives came to see it, and firefighters engaged directly with the students.</p>
+<div class="visibility-grid">
+<figure class="visibility-card visibility-wide"><img alt="Bolivian television crew filming students working on Ninaj Awin at UMSS" src="assets/images/TV_1.JPG"/><figcaption><strong>Media attention.</strong> A Bolivian television crew filming the students at work. The important image is not the camera itself, but what it is pointed at: students building and explaining their own engineering work.</figcaption></figure>
+<figure class="visibility-card"><img alt="UMSS rector visiting the Ninaj Awin project in 2015" src="assets/images/autoridades/rector.JPG"/><figcaption><strong>University leadership.</strong> A visit from the Rector of UMSS during the project. By this point the work had become visible well beyond the teams developing it.</figcaption></figure>
+<figure class="visibility-card"><img alt="Public-sector representative visiting the Ninaj Awin project in 2015" src="assets/images/autoridades/gobernador_o_algo_asi.JPG"/><figcaption><strong>Institutional attention.</strong> A public-sector representative visiting the project. The exact historical title is still being verified; the photograph is preserved here without overstating what the archive has not yet confirmed.</figcaption></figure>
+<figure class="visibility-card visibility-wide"><img alt="Television crew documenting a Ninaj Awin drone demonstration with students and firefighters" src="assets/images/TV_2.JPG"/><figcaption><strong>From laboratory work to public demonstration.</strong> Television documenting the aircraft and the people around it during a demonstration involving students and the fire service.</figcaption></figure>
+</div>
+<div class="visibility-copy"><p>For a project operating with less than US$4,000, this visibility mattered. It gave the students an audience beyond their classrooms and showed that ambitious applied research could emerge from a resource-constrained public university.</p><p>But the attention was a consequence, not the objective. The difficult part had already happened before the cameras arrived: teaching, finding components, asking for support, integrating incompatible pieces, repairing what broke, working late and convincing different disciplines to solve one problem together.</p></div>
+</div>
 </section>
-
-<section id="system" class="section system-section">
-  <div class="wrap">
-    <div class="kicker">What we actually built</div>
-    <h2>A complete experimental chain, from seeing to acting.</h2>
-    <p class="intro">The surviving repositories reconstruct a distributed prototype rather than a single application.</p>
-    <div class="arch">
-      <div class="node"><span>01</span><b>Perception</b><p>OpenCV, HOG features, SVM models, HSV segmentation and image preprocessing for smoke and fire recognition.</p></div>
-      <div class="node"><span>02</span><b>Autonomous agent</b><p>Detection logic connected to behavioral responses and autonomous-control routines.</p></div>
-      <div class="node"><span>03</span><b>Flight control</b><p>Multicopter control framework plus Arduino/OpenPilot integration.</p></div>
-      <div class="node"><span>04</span><b>Communication</b><p>Image servers, sockets and services connecting sensing, processing and control.</p></div>
-      <div class="node"><span>05</span><b>Human layer</b><p>Django/MongoDB, REST services, web/mobile components and augmented-reality concepts for firefighter assistance.</p></div>
-    </div>
-    <div class="context-box">
-      <h3>Why 2015 matters</h3>
-      <p>Today, much of this stack can be assembled from mature SDKs, pretrained models, cloud services and inexpensive hardware. In 2015 the pieces were far rougher. Small civilian drones were still relatively novel, autonomous flight was less accessible, modern deep-learning tooling had not yet become standard engineering infrastructure, and integration consumed a large part of the research effort.</p>
-    </div>
-  </div>
+<section class="section system-section" id="system">
+<div class="wrap">
+<div class="kicker">What we actually built</div>
+<h2>A complete experimental chain, from seeing to acting.</h2>
+<p class="intro">
+      Ninaj Awin combined autonomous drone technology, artificial intelligence,
+      computer vision, autonomous agents, flight control and communications into
+      an experimental aerial wildfire-detection system. The surviving repositories
+      reconstruct a distributed prototype rather than a single application.
+    </p>
+<div class="arch">
+<div class="node"><span>01</span><b>Perception</b><p>OpenCV, HOG features, SVM models, HSV segmentation and image preprocessing for smoke and fire recognition.</p></div>
+<div class="node"><span>02</span><b>Autonomous agent</b><p>Detection logic connected to behavioral responses and autonomous-control routines.</p></div>
+<div class="node"><span>03</span><b>Flight control</b><p>Multicopter control framework plus Arduino/OpenPilot integration.</p></div>
+<div class="node"><span>04</span><b>Communication</b><p>Image servers, sockets and services connecting sensing, processing and control.</p></div>
+<div class="node"><span>05</span><b>Human layer</b><p>Django/MongoDB, REST services, web/mobile components and augmented-reality concepts for firefighter assistance.</p></div>
+</div>
+<div class="context-box">
+<h3>Why 2015 matters</h3>
+<p>Today, much of this stack can be assembled from mature SDKs, pretrained models, cloud services and inexpensive hardware. In 2015 the pieces were far rougher. Small civilian drones were still relatively novel, autonomous flight was less accessible, modern deep-learning tooling had not yet become standard engineering infrastructure, and integration consumed a large part of the research effort.</p>
+</div>
+</div>
 </section>
-
 <section class="section dark" id="field">
-  <div class="wrap">
-    <div class="kicker">A Sunday in Parque Tunari</div>
-    <h2>The system had to work outside the laboratory.</h2>
-    <div class="story-grid">
-      <figure class="story-photo large">
-        <img src="assets/images/DSCN1575.JPG" alt="Ninaj Awin field team in the dry vegetation of Parque Tunari during a 2015 field test" />
-        <figcaption>Part of the field team in Parque Tunari, November 2015. The dry grass and vegetation made the wildfire problem physically obvious. A multicopter used in the tests is visible with the group.</figcaption>
-      </figure>
-      <div class="copy light-copy">
-        <p>One Sunday, part of the team went into Parque Tunari for a field exercise while other students remained in the laboratory and at urban test points. The objective was not simply to make a drone fly. It was to see whether the <strong>whole chain</strong> could operate across locations: field acquisition, communications, visual processing, monitoring and coordination.</p>
-        <p>That division of work mattered. A system intended for wildfire response cannot be validated by one laptop on one table. The field group had to deal with terrain, vegetation, batteries, aircraft, cameras and communications while the remote teams checked that information was arriving and that the rest of the stack behaved as expected.</p>
-        <p>Parque Tunari gave Ninaj Awin its urgency, but the engineering question was general. The same architecture — aerial observation, early fire/smoke recognition, autonomous behavior and human supervision — is relevant to dry wildland environments elsewhere, including Mediterranean and European regions.</p>
-        <p>The project was not deployed in Europe. The claim is simpler and more useful: <strong>the problem we were trying to solve was not uniquely Bolivian.</strong></p>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="kicker">A Sunday in Parque Tunari</div>
+<h2>The system had to work outside the laboratory.</h2>
+<div class="story-grid">
+<figure class="story-photo large">
+<img alt="Ninaj Awin autonomous drone field test in Parque Tunari for wildfire detection, Bolivia, 2015" src="assets/images/DSCN1575.JPG"/>
+<figcaption>Part of the field team in Parque Tunari, November 2015. The dry grass and vegetation made the wildfire problem physically obvious. A multicopter used in the tests is visible with the group.</figcaption>
+</figure>
+<div class="copy light-copy">
+<p>One Sunday, part of the team went into Parque Tunari for a field exercise while other students remained in the laboratory and at urban test points. The objective was not simply to make a drone fly. It was to see whether the <strong>whole chain</strong> could operate across locations: field acquisition, communications, visual processing, monitoring and coordination.</p>
+<p>That division of work mattered. A system intended for wildfire response cannot be validated by one laptop on one table. The field group had to deal with terrain, vegetation, batteries, aircraft, cameras and communications while the remote teams checked that information was arriving and that the rest of the stack behaved as expected.</p>
+<p>Parque Tunari gave Ninaj Awin its urgency, but the engineering question was general. The same architecture — aerial observation, early fire/smoke recognition, autonomous behavior and human supervision — is relevant to dry wildland environments elsewhere, including Mediterranean and European regions.</p>
+<p>The project was not deployed in Europe. The claim is simpler and more useful: <strong>the problem we were trying to solve was not uniquely Bolivian.</strong></p>
+</div>
+</div>
+</div>
 </section>
-
 <section class="section legacy">
-  <div class="wrap split">
-    <div><div class="kicker">What survived</div><h2>The project ended. Its effects did not.</h2></div>
-    <div class="copy">
-      <p>Ninaj Awin never became a production wildfire-monitoring service. Financial limitations and the difficulty of sustaining a multidisciplinary university effort made that unrealistic.</p>
-      <p>But production was not the only output. The project generated thesis work, research, reusable software and models, practical experience across departments and direct contact with the difficult gap between an algorithm and an operational system.</p>
-      <p>More importantly, it gave students a way to experience engineering as something larger than coursework: <strong>a real problem, incomplete information, scarce resources, many disciplines, external users and responsibility for making the pieces work together.</strong></p>
-      <blockquote>This archive exists because a Git repository preserves code, but it does not preserve the people who taught, learned, argued, soldered, debugged, flew, failed, returned the next day and finally made the thing work.</blockquote>
-    </div>
-  </div>
+<div class="wrap split">
+<div><div class="kicker">What survived</div><h2>The project ended. Its effects did not.</h2></div>
+<div class="copy">
+<p>Ninaj Awin never became a production wildfire-monitoring service. Financial limitations and the difficulty of sustaining a multidisciplinary university effort made that unrealistic.</p>
+<p>But production was not the only output. The project generated thesis work, research, reusable software and models, practical experience across departments and direct contact with the difficult gap between an algorithm and an operational system.</p>
+<p>More importantly, it gave students a way to experience engineering as something larger than coursework: <strong>a real problem, incomplete information, scarce resources, many disciplines, external users and responsibility for making the pieces work together.</strong></p>
+<blockquote>This archive exists because a Git repository preserves code, but it does not preserve the people who taught, learned, argued, soldered, debugged, flew, failed, returned the next day and finally made the thing work.</blockquote>
+</div>
+</div>
 </section>
-
-<section id="archive" class="section archive-section">
-  <div class="wrap">
-    <div class="kicker">Historical source code</div>
-    <h2>The surviving repositories</h2>
-    <p class="intro">The old APIs, Python 2 code, HOG/SVM models, Arduino sketches and integration scripts are preserved intentionally. They are part of the technical archaeology of the project.</p>
-    <div class="repos">
-      <a href="https://github.com/eduardodisanti/ninaj-awin"><b>ninaj-awin</b><span>Project overview and historical umbrella repository.</span></a>
-      <a href="https://github.com/eduardodisanti/drone_control"><b>drone_control</b><span>Autonomous control, drone framework, image services and fire/smoke recognition.</span></a>
-      <a href="https://github.com/eduardodisanti/inteligencia_visual"><b>inteligencia_visual</b><span>Computer-vision experiments, preprocessing, training-data generation and classifiers.</span></a>
-      <a href="https://github.com/eduardodisanti/Control-Openpilot"><b>Control-Openpilot</b><span>Arduino/OpenPilot control experiments.</span></a>
-      <a href="https://github.com/eduardodisanti/FabricaWeb"><b>FabricaWeb</b><span>Django, MongoDB/MongoEngine, REST, mobile and web infrastructure.</span></a>
-    </div>
-  </div>
+<section class="section archive-section" id="archive">
+<div class="wrap">
+<div class="kicker">Historical source code</div>
+<h2>The surviving repositories</h2>
+<p class="intro">The old APIs, Python 2 code, HOG/SVM models, Arduino sketches and integration scripts are preserved intentionally. They are part of the technical archaeology of the project.</p>
+<div class="repos">
+<a href="https://github.com/eduardodisanti/ninaj-awin"><b>ninaj-awin</b><span>Project overview and historical umbrella repository.</span></a>
+<a href="https://github.com/eduardodisanti/drone_control"><b>drone_control</b><span>Autonomous control, drone framework, image services and fire/smoke recognition.</span></a>
+<a href="https://github.com/eduardodisanti/inteligencia_visual"><b>inteligencia_visual</b><span>Computer-vision experiments, preprocessing, training-data generation and classifiers.</span></a>
+<a href="https://github.com/eduardodisanti/Control-Openpilot"><b>Control-Openpilot</b><span>Arduino/OpenPilot control experiments.</span></a>
+<a href="https://github.com/eduardodisanti/FabricaWeb"><b>FabricaWeb</b><span>Django, MongoDB/MongoEngine, REST, mobile and web infrastructure.</span></a>
+</div>
+</div>
 </section>
-
-<section id="citation" class="section legal-section">
-  <div class="wrap split">
-    <div><div class="kicker">Use & citation</div><h2>Publicly available. Not freely reusable.</h2></div>
-    <div class="copy">
-      <p><strong>Ninaj Awin was a project of the Universidad Mayor de San Simón (UMSS).</strong> This repository is a personal historical archive maintained by Eduardo Di Santi to preserve surviving material and reconnect the project record. Repository ownership does not imply ownership of the university project or of every contribution contained in the archive.</p><p>Unless a specific item states otherwise, photographs, videos, text, graphics and archival materials are <strong>all rights reserved</strong>. Rights may be held by UMSS and/or by the respective authors, photographers, students, faculty members and other contributors.</p>
-      <p>You are welcome to link to this archive and cite the project. Reproduction, redistribution, republication, modification, exhibition, documentary use, dataset use, commercial exploitation or other reuse requires prior permission from the relevant rights holder(s), except where otherwise permitted by law.</p>
-      <p><strong>Suggested citation:</strong><br />Universidad Mayor de San Simón (UMSS). (2015). <em>Ninaj Awin — The Eye of Fire</em> [multidisciplinary research and educational project]. Cochabamba, Bolivia. Historical archive maintained by Eduardo Di Santi, reconstructed 2026.</p>
-      <p>Machine-readable citation metadata is provided in <code>CITATION.cff</code>. Full terms are available in <code>LICENSE</code>.</p>
-    </div>
-  </div>
+<section class="section legal-section" id="citation">
+<div class="wrap split">
+<div><div class="kicker">Use &amp; citation</div><h2>Publicly available. Not freely reusable.</h2></div>
+<div class="copy">
+<p><strong>Ninaj Awin was a project of the Universidad Mayor de San Simón (UMSS).</strong> This repository is a personal historical archive maintained by Eduardo Di Santi to preserve surviving material and reconnect the project record. Repository ownership does not imply ownership of the university project or of every contribution contained in the archive.</p><p>Unless a specific item states otherwise, photographs, videos, text, graphics and archival materials are <strong>all rights reserved</strong>. Rights may be held by UMSS and/or by the respective authors, photographers, students, faculty members and other contributors.</p>
+<p>You are welcome to link to this archive and cite the project. Reproduction, redistribution, republication, modification, exhibition, documentary use, dataset use, commercial exploitation or other reuse requires prior permission from the relevant rights holder(s), except where otherwise permitted by law.</p>
+<p><strong>Suggested citation:</strong><br/>Universidad Mayor de San Simón (UMSS). (2015). <em>Ninaj Awin — The Eye of Fire</em> [multidisciplinary research and educational project]. Cochabamba, Bolivia. Historical archive maintained by Eduardo Di Santi, reconstructed 2026.</p>
+<p>Machine-readable citation metadata is provided in <code>CITATION.cff</code>. Full terms are available in <code>LICENSE</code>.</p>
+</div>
+</div>
 </section>
 </main>
-
 <footer>
-  <div class="wrap footer-grid">
-    <div><strong>Ninaj Awin · The Eye of Fire</strong><br />Historical project archive · UMSS · Cochabamba, Bolivia · 2015</div>
-    <div>Project: Universidad Mayor de San Simón (UMSS), 2015.<br />Historical archive maintained by Eduardo Di Santi. Rights in individual materials remain with UMSS and/or their respective rights holders. Reuse requires prior permission unless otherwise permitted by law.</div>
-  </div>
+<div class="wrap footer-grid">
+<div><strong>Ninaj Awin · The Eye of Fire</strong><br/>Historical project archive · UMSS · Cochabamba, Bolivia · 2015</div>
+<div>Project: Universidad Mayor de San Simón (UMSS), 2015.<br/>Historical archive maintained by Eduardo Di Santi. Rights in individual materials remain with UMSS and/or their respective rights holders. Reuse requires prior permission unless otherwise permitted by law.</div>
+</div>
 </footer>
 </body>
 </html>
